@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tweetStreamGrid = new System.Windows.Forms.DataGridView();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tweetSource = new System.Windows.Forms.BindingSource(this.components);
             this.stopButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
             this.progressLabel = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Content = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tweetStreamGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tweetSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tweetStreamGrid
@@ -55,7 +55,7 @@
             this.Id,
             this.Username,
             this.Content});
-            this.tweetStreamGrid.DataSource = this.bindingSource1;
+            this.tweetStreamGrid.DataSource = this.tweetSource;
             this.tweetStreamGrid.Location = new System.Drawing.Point(23, 53);
             this.tweetStreamGrid.Name = "tweetStreamGrid";
             this.tweetStreamGrid.ReadOnly = true;
@@ -109,7 +109,7 @@
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(583, 363);
+            this.statusLabel.Location = new System.Drawing.Point(500, 363);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(0, 13);
             this.statusLabel.TabIndex = 6;
@@ -160,7 +160,7 @@
             this.Name = "TweetStreamer";
             this.Text = "Tweet Streamer";
             ((System.ComponentModel.ISupportInitialize)(this.tweetStreamGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tweetSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,7 +169,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView tweetStreamGrid;
-        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.BindingSource tweetSource;
         private System.Windows.Forms.Button stopButton;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Label progressLabel;
