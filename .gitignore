@@ -50,14 +50,6 @@ deliverables/
 *.orig
 
 *.combined.css
-src/Voyager/Web/Fiserv.PS.Web/Scripts/
-src/Voyager/Web/Fiserv.PS.Web/Themes/
-src/Voyager/Web/Fiserv.PS.Web/temp/
-
-src/Voyager/Web/Fiserv.PS.SalesPathways.Web/Scripts/
-src/Voyager/Web/Fiserv.PS.SalesPathways.Web/Themes/
-
-
 *.webtestresult
 src/Voyager/TestResults
 
